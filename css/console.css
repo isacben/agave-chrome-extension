@@ -1,0 +1,36 @@
+#agave-console-y380olam79 {
+    background-color: #18191A;
+    color: #E4E6EB;
+}
+
+.agave-segment {
+    margin-bottom: 10px;
+}
+
+.agave-segment-content {
+    margin: 0 10px;
+}
+
+.agave-segment-header{
+    background-color: #3A3B3C;
+    margin: 0 0 8px 0;
+    padding: 0px;
+    text-align: left;
+    font-size: 7px;
+}
+
+#agave-hide-y380olam79{
+    position:sticky;
+    top: 0;
+    background-color: #18191A;
+    color: #9E9E9E;
+    border-bottom: 1px solid #3A3B3C;
+    text-align: left;
+    font-family: sans-serif;
+    padding: 3px 3px 3px 8px;
+}
+
+#agave-hide-y380olam79 a {
+    text-decoration: none;
+    color: #9E9E9E;
+}

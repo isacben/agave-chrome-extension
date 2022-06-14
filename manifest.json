@@ -1,0 +1,41 @@
+{
+    "manifest_version": 3,
+    "name": "Agave",
+    "version": "0.1.0",
+    "author": "Isaac Benitez",
+    "homepage_url": "https://github.com/isacben",
+    "description": "Pretty print any code in your browser. Just select the code, right click it, and select Run Agave.",
+    "icons": {
+        "16": "img/icon48.png",
+        "48": "img/icon48.png",
+        "128": "img/icon128.png"
+    },
+    "permissions": ["contextMenus", "activeTab", "scripting"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": [
+            "lib/beautify.js",
+            "lib/beautify-html.js", 
+            "lib/beautify-css.js", 
+            "lib/jquery-3.6.0.min.js"
+        ],
+        "css": ["css/console.css"],
+        "run_at": "document_end"
+    }],
+    "commands": {
+        "inject-script": {
+          "suggested_key": {
+            "windows": "Ctrl+Shift+S",
+            "mac": "Command+Shift+S",
+            "chromeos": "Ctrl+Shift+S",
+            "linux": "Ctrl+Shift+S"
+          },
+          "description": "Run Agave"
+        }
+    },
+    "converted_from_user_script": true,
+    "offline_enabled": true
+}
